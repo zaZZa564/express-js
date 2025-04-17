@@ -1,3 +1,4 @@
 export const DATA = {
-  domain: 'buyguns.io'
+  domain: 'buyguns.io',
+  path: '/api/twit'
 }
