@@ -1,0 +1,22 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "express js test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaZZa564/express-js.git"
+  },
+  "author": "zaZZa564 <anus_bobra564@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaZZa564/express-js/issues"
+  },
+  "homepage": "https://github.com/zaZZa564/express-js#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
