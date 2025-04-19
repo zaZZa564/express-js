@@ -6,9 +6,9 @@ async function main() {
   app.use(express.json())
 
   app.use('/api/twit', (req, res) => {
-    res.json({
+    res.status(200).json({
       message: 'success'
-    }).status(200)
+    })
   })
 
   app.listen(3000, () => {
