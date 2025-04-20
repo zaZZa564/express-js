@@ -10,7 +10,6 @@ async function main() {
   app.use(express.json())
 
   app.use('/api/twits', twitRouter)
-
   app.all('/*splat', (req, res) => {
     res.status(404).json({message: 'Not found'})
   })
