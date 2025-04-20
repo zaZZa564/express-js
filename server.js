@@ -9,6 +9,18 @@ const app = express();
 async function main() {
   app.use(express.json())
 
+  //получение ошибки
+  app.get('/error', (req, res) => {
+    throw new Error('This is a test error')
+  }) 
+
+  // обработка ошибок
+  app.use((err, req, res, next) => {
+    console.error(err.stack)
+    res.status(500).send('Что-то пошло не так')
+  })
+
+  // роутеры
   app.use('/api/twits', twitRouter)
   app.all('/*splat', (req, res) => {
     res.status(404).json({message: 'Not found'})
